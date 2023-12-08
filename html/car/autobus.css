@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #a0a0a0;}
+
+.car {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-color: #333;
+  width: 300px;
+  height: 150px;
+  animation: drive 5s linear infinite reverse;
+  border-radius: 10px;
+  outline-style: solid;
+outline-color: #900808;}
+
+.window {
+  background-color: #185693;
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px; 
+  outline-style: solid;
+  outline-color: #900808}
+
+.body {
+  background-color: #900808; 
+  grid-column: 1 / 4;
+  grid-row: 2 / 4;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;}
+
+.wheel1, .wheel2 {
+  background-color: #000000;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: -15px; }
+
+.wheel1 {left: 20px;}
+.wheel2 {right: 20px;}
+@keyframes drive {0% {transform: translateX(300%);}
+  100% { transform: translateX(-300%); } }

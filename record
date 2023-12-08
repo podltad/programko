@@ -1,0 +1,66 @@
+6900
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stránka s obrázkem a textem</title>
+    <style>
+        body {
+            background-color: #cceeff; /* Modré pozadí pro celou stránku */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center; /* Umístění do středu vertikálně */
+            justify-content: center; /* Umístění do středu horizontálně */
+            height: 100vh; /* Výška celého okna pro vertikální umístění */
+        }
+
+        #container {
+            width: 80%;
+            display: flex;
+            justify-content: space-between; /* Mezi sloupci bude větší mezera */
+            margin-top: 50px; /* Posunutí obsahu o trochu níže */
+        }
+
+        #left-column, #right-column {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box; /* Umožní nám zachovat šířku 100% bez nutnosti odčítání paddingu */
+        }
+
+        #left-column {
+            border-top: 10px solid #ffffcc; /* Žlutá hranice pro levý sloupec */
+            border-bottom: 10px solid #00ccff; /* Modrá hranice pro levý sloupec */
+            background-color: #cceeff; /* Modré pozadí pro levý sloupec */
+        }
+
+        #right-column {
+            border-top: 10px solid #00ccff; /* Modrá hranice pro pravý sloupec */
+            border-bottom: 10px solid #ffffcc; /* Žlutá hranice pro pravý sloupec */
+            background-color: #cceeff; /* Modré pozadí pro pravý sloupec */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 10px solid #00cc00; /* Zelená hranice pro obrázek */
+            display: block;
+            margin: 20px auto 0; /* Přidáme mezeru nad obrázkem */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="left-column">
+            <h2>Text na levé straně</h2>
+            <p>Zde může být váš text...</p>
+        </div>
+        <div id="right-column">
+            <img src="url_obrazku.jpg" alt="Obrázek">
+        </div>
+    </div>
+
+</body>
+</html>

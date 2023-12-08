@@ -1,0 +1,67 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: 100vh;}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr }
+* {
+    margin: 0;
+    padding: 0;}
+  
+.div1 { background-color: rgb(100, 128, 0); }
+.div2 {  background-color: red; }
+.div3 {  background-color: yellow; }
+.div4 {  background-color: blue; }
+.div5 {  background-color: rgb(253, 92, 92); } 
+.div6 {  background-color: orange; }
+.div7 {  background-color: green; }
+  
+.parent > div {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;  } 
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+img {
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    margin-left: 80px;}
+h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 75px;
+    color: white ;}
+h2{
+    margin-top: 35px;
+    text-align: center;
+    font-size: 35px;}
+.div2:hover {
+    background-color: darkred;
+    color: white;
+    transition: 800ms;}
+.div3:hover {
+  background-color: rgb(139, 128, 0);
+  color: white;
+  transition: 800ms;}
+.div4:hover {
+  background-color: darkblue;
+  color: white;
+  transition: 800ms;}
+.div5:hover {
+  background-color: rgb(185, 75, 75);
+  color: white;
+  transition: 800ms;}
+.div6:hover {
+  background-color: rgb(182, 100, 0);
+  color: white;
+  transition: 800ms;}
+.div7:hover {
+  background-color: darkgreen;
+  color: white;
+  transition: 800ms;}

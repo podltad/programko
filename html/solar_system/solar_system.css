@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(19, 6, 39);}
+
+.Slunce {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(#ffc800, #ed7011);
+    border-radius: 50%;
+    box-shadow:0px 0px 40px #f3ce2a;
+    position: center;}
+
+.Merkur {
+    position: absolute;
+    width: 2.4px;
+    height: 2.4px;
+    border-radius: 50%;
+    background: linear-gradient(0.25turn, #a57649, #b92f1d, #0d033a);
+    top: 50%;
+    left: 50%;
+    transform-origin: top left;
+    animation: rotate-Merkur 3.9s linear infinite;}
+            
+    @keyframes rotate-Merkur {
+        0% {transform: rotate(0deg) translateX(30px)}
+        100% {transform: rotate(360deg) translateX(30px)}}    
+
+ .orbit_Merkur{
+    position: absolute;
+    width: 62.4px; 
+    height: 62.4px;
+    border: 0.5px dashed white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0; }        
+
+.Venuse {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: linear-gradient(0.25turn, #875467, #ee6516, #0d033a);
+    top: 50%;
+    left: 50%;
+    transform-origin: top left;
+    animation: rotate-Venuse 5.25s linear infinite;}
+            
+    @keyframes rotate-Venuse {
+        0% {transform: rotate(0deg) translateX(44.5px)}
+        100% {transform: rotate(360deg) translateX(44.5px)}}    
+
+.orbit_Venuse{
+    position: absolute;
+    width: 96px; 
+    height: 96px;
+    border: 0.5px dashed white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0; }               
+
+.Zeme {
+    position: absolute;
+    width: 6.3px;
+    height: 6.3px;
+    border-radius: 50%;
+    background: linear-gradient(0.25turn, #14742f, #20b3d0, #0d033a);
+    top: 50%;
+    left: 50%;
+    transform-origin: top left;
+    animation: rotate-Zeme 6.65s linear infinite;}
+    
+    @keyframes rotate-Zeme {
+        0% {transform: rotate(0deg) translateX(54.5px)}
+        100% {transform: rotate(360deg) translateX(54.5px)}}
+
+.orbit_Zeme{
+    position: absolute;
+    width: 116.3px; 
+    height: 116.3px;
+    border: 0.5px dashed white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0; }       
+
+.Mars {
+    position: absolute;
+    width: 3.3px;
+    height: 3.3px;
+    border-radius: 50%;
+    background: linear-gradient(0.25turn, #a63838, #ff0000, #0d033a);
+    top: 50%;
+    left: 50%;
+    transform-origin: top left;
+    animation: rotate-Mars 9.86s linear infinite;}
+    
+    @keyframes rotate-Mars {
+        0% {transform: rotate(0deg) translateX(64.5px)}
+        100% {transform: rotate(360deg) translateX(64.5px)}}
+    
+.orbit_Mars{
+    position: absolute;
+    width: 133.3px; 
+    height: 133.3px;
+    border: 0.5px dashed white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0; }      
+
+.Jupiter {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(0.25turn, #97a4aa, #bda346, #0d033a);
+    top: 50%;
+    left: 50%;
+    transform-origin: top left;
+    animation: rotate-Jupiter 46.29s linear infinite;}
+    
+    @keyframes rotate-Jupiter {
+        0% {transform: rotate(0deg) translateX(90px)}
+        100% {transform: rotate(360deg) translateX(90px)}}
+
+.orbit_Jupiter{
+    position: absolute;
+    width: 270px; 
+    height: 270px;
+    border: 0.5px dashed white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0; }           
+
+.Saturn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: linear-gradient(0.25turn, #6f99ac, #a746bd, #0d033a);
+    top: 50%;
+    left: 50%;
+    transform-origin: top left;
+    animation: rotate-Saturn 110.53s linear infinite;}
+    
+    @keyframes rotate-Saturn {
+        0% {transform: rotate(0deg) translateX(210px)}
+        100% {transform: rotate(360deg) translateX(210px)}}
+
+.orbit_Saturn{
+    position: absolute;
+    width: 450px; 
+    height: 450px;
+    border: 0.5px dashed white; 
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0; }      
+
+.ring {
+    position:absolute;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    border-radius: 50%;
+    transform: translate(-25%, -25%);
+    border:12px solid rgba(95, 94, 61, 0.667);}
+
+.Uran {
+    position: absolute;
+    width: 25.3px;
+    height: 25.3px;
+    border-radius: 50%;
+    background: linear-gradient(0.25turn, #61b7df, #6476ce, #0d033a);
+    top: 50%;
+    left: 50%;
+    transform-origin: top left;
+    animation: rotate-Uran 309.64s linear infinite;}
+    
+    @keyframes rotate-Uran {
+        0% {transform: rotate(0deg) translateX(300px)}
+        100% {transform: rotate(360deg) translateX(300px)}}
+
+.orbit_Uran{
+    position: absolute;
+    width: 625.3px; 
+    height: 625.3px;
+    border: 0.5px dashed white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0; }      
+
+.Neptun {
+    position: absolute;
+    width: 24.6px;
+    height: 24.6px;
+    border-radius: 50%;
+    background: linear-gradient(0.25turn, #336176, #1f1faa, #0d033a);
+    top: 50%;
+    left: 50%;
+    transform-origin: top left;
+    animation: rotate-Neptun 604.48s linear infinite;}
+    
+    @keyframes rotate-Neptun {
+        0% {transform: rotate(0deg) translateX(350px)}
+        100% {transform: rotate(360deg) translateX(350px)}}
+
+.orbit_Neptun{
+    position: absolute;
+    width: 724.6px; 
+    height: 724.6px;
+    border: 0.5px dashed white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0; }              

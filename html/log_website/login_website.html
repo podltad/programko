@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Přihlášení</title>
+  </head>
+  <body>
+    <header>
+      <img src="img/astronaut.png" alt="Logo" />
+      <nav>
+        <ul>
+          <li><a href="home">Domů</a></li>
+          <li><a href="o-nas">O nás</a></li>
+          <li><a href="produkty">Produkty</a></li>
+          <li><a href="kontakty">Kontakty</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="login-window">
+        <h1>Přihlášení do systému</h1>
+        <form action="" method="POST">
+          <div class="frm-grp">
+            <label><input type="radio" name="edu" value="0" />Bez</label>
+            <label><input type="radio" name="edu" value="1" />ZŠ</label>
+            <label><input type="radio" name="edu" value="2" checked />SŠ</label>
+            <label><input type="radio" name="edu" value="3" />VŠ</label>
+          </div>
+          <div class="frm-grp">
+            <label for="f-eml">Email:</label>
+            <input
+              id="f-eml"
+              type="email"
+              name="email"
+              placeholder="jon.doe@gmail.com"
+              required
+              maxlength="100"
+              autofocus
+            />
+          </div>
+          <div class="frm-grp">
+            <label for="f-pass">Heslo:</label>
+            <input
+              id="f-pass"
+              type="password"
+              name="password"
+              placeholder="dF3g_Ahj3lk4!"
+              required
+              maxlength="8"
+            />
+          </div>
+          <div class="frm-grp">
+            <input type="submit" name="login" value="Přihlásit" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer><p>&copy;2023 Tadeáš Podlipný</p></footer>
+  </body>
+</html>
