@@ -1,60 +1,64 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande','Lucida Sans', Arial, sans-serif;}
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande','Lucida Sans', Arial, sans-serif;}
   
-
-
 .main {
-    background: rgb(180, 20, 20);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    border-style: solid;
-  }
+  background: #fdcc04;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border-style: solid;}
 
 .border_container{
-    position: absolute;
-    display: flex;
-    margin: auto;
-    padding: 250px;
-    border: 2px solid #888;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-}
+  text-align: center;
+  border: 2px solid #333;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: -1em 0 1em olive;}
 
-  nav {
-    height: 80px;
-    border-style: solid;
-    background: rgb(180, 20, 20);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0rem ;
-  }
+.border_container p {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5}
 
-  nav ul {
-    list-style: none;
-    padding: 0;}
+.image-container {
+  margin-top: 15px;}
+
+img {
+  max-width: 100%;
+  height: auto;}
+
+nav {
+  height: 80px;
+  border-style: solid;
+  background: #fdcc04;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem ;}
+
+nav ul {
+  list-style: none;
+  padding: 0;}
   
-  nav ul li {
-    display: inline;
-    margin-right:center;}
+nav ul li {
+  display: inline;
+  margin-right:center;}
   
-  nav a {
-    text-decoration: none;
-    color: #000;
-    padding: 0 1.5rem;
-  }
+nav a {
+  text-decoration: none;
+  color: #000;
+  padding: 0 1.5rem;}
   
-  nav a:hover {
-    color: #fff;
-  }
+nav a:hover {
+  color: #fff;}
+
 footer {
-  background:rgb(180, 20, 20) ;
+  background:#fdcc04 ;
   color: #000000;
   text-align: center;
   padding: 5px;
@@ -70,13 +74,15 @@ nav {
   flex-direction: column;
   height: 80px;
   border-style: solid;
-  background: rgb(180, 20, 20);
+  background: #fdcc04;
   justify-content: space-between;
   align-items: center;
   padding: 2rem ;}}
+
 nav a {
   text-decoration: none;
   color: #000;
   padding: 0 1rem;
-  font-size: 1rem;
-}  
+  font-size: 1rem;}  
+
+
